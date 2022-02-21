@@ -8,4 +8,4 @@ if __name__ == '__main__':
     create_app(config)
     config.APP.run(host=config.IP_HOST, port=config.PORT_HOST)
 
-print("\n----------\n\n")
+print("\n----------")
