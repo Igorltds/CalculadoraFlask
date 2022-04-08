@@ -1,3 +1,5 @@
+# Verificado em aula #
+
 # Calculadora_flask 
 projeto simples de revisão de materia da faculdade
 

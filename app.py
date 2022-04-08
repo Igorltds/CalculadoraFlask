@@ -23,12 +23,12 @@ def create_app(config):
         operacao = request.form['operacao']
 
         try:
-            v1=int(v1)
+            v1=float(v1)
         except ValueError:
             return "Valores errados"
 
         try:
-            v2 =int(v2)
+            v2 =float(v2)
         except ValueError:
             return "Valores errados"
         
