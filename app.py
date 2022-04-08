@@ -32,6 +32,7 @@ def create_app(config):
         except ValueError:
             return "Valores errados"
         
+        '''
         match operacao:
             case "soma":
                 return str(soma(v1, v2))
@@ -41,7 +42,18 @@ def create_app(config):
                 return str(divisao(v1, v2))
             case "multiplicacao":
                 return str(multiplicacao(v1, v2))
-        return str("algo deu errado")
+        return str("algo deu errado")'''
+        # ajuste para rodar em python mais antigos
+        if operacao == "soma":
+            return str(soma(v1, v2))
+        elif operacao == "subtracao":
+            return str(subtracao(v1, v2))
+        elif operacao == "divisao":
+            return str(divisao(v1, v2))
+        elif operacao == "multiplicacao":
+            return str(multiplicacao(v1, v2))
+        else: return str("algo deu errado")
+
 
 
     
