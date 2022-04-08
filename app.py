@@ -32,7 +32,8 @@ def create_app(config):
         except ValueError:
             return "Valores errados"
         
-        '''
+        #para pythons mais recentes (3.10 por exemplo)
+        ''' 
         match operacao:
             case "soma":
                 return str(soma(v1, v2))
@@ -43,6 +44,7 @@ def create_app(config):
             case "multiplicacao":
                 return str(multiplicacao(v1, v2))
         return str("algo deu errado")'''
+
         # ajuste para rodar em python mais antigos
         if operacao == "soma":
             return str(soma(v1, v2))
