@@ -2,7 +2,6 @@ from flask import Flask, request, render_template
 from calculadora import *
 
 
-
 def create_app(config):
     app = Flask(__name__)
 
@@ -15,7 +14,7 @@ def create_app(config):
     @app.route('/')
     def index():
         return render_template('html.html')
-    
+
     @app.route('/calculaform', methods=['POST', 'GET'])
     def calculaform():
         v1 = request.form['v1']
@@ -23,17 +22,16 @@ def create_app(config):
         operacao = request.form['operacao']
 
         try:
-            v1=float(v1)
+            v1 = float(v1)
         except ValueError:
             return "Valores errados"
 
         try:
-            v2 =float(v2)
+            v2 = float(v2)
         except ValueError:
             return "Valores errados"
-        
-        #para pythons mais recentes (3.10 por exemplo)
-        ''' 
+
+        # para pythons mais recentes (3.10 por exemplo)
         match operacao:
             case "soma":
                 return str(soma(v1, v2))
@@ -43,9 +41,10 @@ def create_app(config):
                 return str(divisao(v1, v2))
             case "multiplicacao":
                 return str(multiplicacao(v1, v2))
-        return str("algo deu errado")'''
+        return str("algo deu errado")
 
         # ajuste para rodar em python mais antigos
+        '''
         if operacao == "soma":
             return str(soma(v1, v2))
         elif operacao == "subtracao":
@@ -55,11 +54,4 @@ def create_app(config):
         elif operacao == "multiplicacao":
             return str(multiplicacao(v1, v2))
         else: return str("algo deu errado")
-
-
-
-    
-
-
-    
-        
+        '''
