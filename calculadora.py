@@ -32,7 +32,7 @@ def potenciaciacao(v1,v2):
     except:
         return "digitos inválidos para potenciação"
 
-def raiz_quadrada(v1, v2):
+def raiz(v1, v2):
     try: 
         return v1**1/v2
     except:
