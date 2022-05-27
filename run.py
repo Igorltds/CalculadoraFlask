@@ -1,6 +1,6 @@
 from config import app_config, app_active
 from app import create_app
-
+''
 config = app_config[app_active]
 
 

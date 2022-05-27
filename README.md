@@ -7,9 +7,9 @@ projeto simples de revisão de materia da faculdade
 ### Minimo (tudo LTS de 2021)
  - Ter flask instalado
  - Ter o requests instalado
+- python 3.10 ou superior
 
 ### Recomendado (pode ignorar)
-- python 3.10 ou superior
 -  Declarar o tipo de env antes de rodar o arquivo "run.py", com esse comando:
 export FLASK_ENV=development
 

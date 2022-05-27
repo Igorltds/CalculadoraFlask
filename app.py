@@ -41,6 +41,12 @@ def create_app(config):
                 return str(divisao(v1, v2))
             case "multiplicacao":
                 return str(multiplicacao(v1, v2))
+            case "potencicacao":
+                return str(potencicacao(v1, v2))
+            case "raiz quadrada":
+                return str(raiz_quadrada(v1, v2))
+            case "logaritimo":
+                return str(logaritimo(v1, v2))
         return str("algo deu errado")
 
         # ajuste para rodar em python mais antigos
