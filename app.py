@@ -42,7 +42,7 @@ def create_app(config):
             case "multiplicacao":
                 return str(multiplicacao(v1, v2))
             case "potencia":
-                return str(potencicacao(v1, v2))
+                return str(potencia(v1, v2))
             case "raiz":
                 return str(raiz(v1, v2))
             case "logaritimo":
