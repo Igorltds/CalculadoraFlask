@@ -6,7 +6,7 @@ projeto simples de revisão de materia da faculdade
 e entrega de atividade continua.
 
 ## Requisitos:
-### Minimo (tudo LTS de 2022
+### Minimo (tudo LTS de 2022)
  - Ter flask instalado.
  - Ter o requests instalado.
 - python 3.10 ou superior.
@@ -19,7 +19,8 @@ e entrega de atividade continua.
 
 
 ## execução
- - Por fim é só executar o arquivo "run.py"
+ - Por fim é só executar o arquivo "run.py":
+  - python run.py  
 
 ## Como usar
 digite os valores e depois a operação por extenso.
